@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNAN AHMED</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="text/javascript" href="../javascript code/index.js"> -->
+<script>
+    var slideIndex = 0;
+    
+    function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }    
+</script>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="adnan.PNG" alt="2"></a>
+        </div>
+        <div style="display: flex; margin-top: 45px;">
+            <form action="cv.html" style="margin-left: 36%; font-size: 40px;"><button class="button button2"> My Cv </button></form>
+            <form action="intro.html" style="margin-left: 4%; font-size: 40px;"> <button class="button button2"> My Intro </button></form>
+            <form action="ProjectP.html" style="margin-left: 4%; font-size: 40px;"> <button class="button button2">  PROJECT PROPOSAL </button></form>
+        </div> 
+    </nav>
+    <div class="split left">
+        <h1>HELLO THIS IS ADNAN AHMED CHECK MY CV AND INTRO FROM TOP OF TWO LINKS</h1>
+        <div>
+            <img class="size_position" src="adnan.PNG" alt="">
+        </div>
+  </div>
+  <div class="vertical"></div>
+  <div class="split right">
+      <div>
+        <div class="slideshow-container card4">
+            <div class="mySlides">
+              <img  src="2.jpg" alt="1">
+            </div>
+            
+            <div class="mySlides">
+              <img src="1.jpg" alt="2">
+            </div>
+            <div class="mySlides">
+                <img src="3.jpg" alt="3">
+              </div>
+        </div>
+            <br>
+            <script>
+                showSlides()
+            </script>
+      </div>
+  </div>
+</body>
+</html>

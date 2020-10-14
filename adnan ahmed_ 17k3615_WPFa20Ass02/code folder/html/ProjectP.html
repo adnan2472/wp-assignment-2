@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ganttchart.css">
+    <link rel="stylesheet" href="project.css">
+
+    <script>
+        function hello1() {
+            document.getElementById("p2").style.display = "none";
+            document.getElementById("p3").style.display = "none";
+            document.getElementById("p1detail").style.display = "";
+        }
+        function hello2() {
+            document.getElementById("p1").style.display = "none";
+            document.getElementById("p3").style.display = "none";
+            document.getElementById("p2detail").style.display = "";
+            document.getElementById("p3").style.display = "none";
+            document.getElementById("p2").style.marginLeft = "10%";
+
+        }
+        function hello3() {
+            document.getElementById("p1").style.display = "none";
+            document.getElementById("p2").style.display = "none";
+            document.getElementById("p3detail").style.display = "";
+            document.getElementById("p3").style.marginLeft = "10%";
+        }
+        function goback() {
+            document.getElementById("part1").style.display = "none";
+            document.getElementById("part2").style.display = "none";
+            document.getElementById("part3").style.display = "none";
+            document.getElementById("p3detail").style.display = "none";
+            document.getElementById("p1detail").style.display = "none";
+            document.getElementById("p2detail").style.display = "none";
+            document.getElementById("p1").style.display = "";
+            document.getElementById("p2").style.display = "";
+            document.getElementById("p3").style.display = "";
+            document.getElementById("p2").style.marginLeft = "1%";
+            document.getElementById("p3").style.marginLeft = "1%";
+            document.getElementById("gantt").style.display = "none";
+
+
+
+
+        }
+        function ShowPartner() {
+            document.getElementById("p1").style.display = "none";
+            document.getElementById("p2").style.display = "none";
+            document.getElementById("p3").style.display = "none";
+            document.getElementById("p1detail").style.display = "none";
+            document.getElementById("p2detail").style.display = "none";
+            document.getElementById("p3detail").style.display = "none";
+            document.getElementById("part1").style.display = "";
+            document.getElementById("part2").style.display = "";
+            document.getElementById("part3").style.display = "";
+            document.getElementById("gantt").style.display = "none";
+
+
+        }
+        function ShowGanttChart() {
+            document.getElementById("p1").style.display = "none";
+            document.getElementById("p2").style.display = "none";
+            document.getElementById("p3").style.display = "none";
+            document.getElementById("p1detail").style.display = "none";
+            document.getElementById("p2detail").style.display = "none";
+            document.getElementById("p3detail").style.display = "none";
+            document.getElementById("part1").style.display = "none";
+            document.getElementById("part2").style.display = "none";
+            document.getElementById("part3").style.display = "none";
+            document.getElementById("gantt").style.display = "";
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div style="display:flex ;">
+
+
+
+        <div id="p1" class="card" style="width: 25%; margin-left: 10%;" onclick="hello1()">
+            <img src="./boutique.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h5><b>Boutique Management System
+                    </b></h5>
+
+            </div>
+        </div>
+        <div id="p2" class="card" style="width: 25%; margin-left: 1%; " onclick="hello2()" v>
+            <img src="./carpool.jpg" alt="Avatar" style="width:100%;height: 250px;">
+            <div class="container">
+                <h5><b>Carpool Management Service
+                    </b></h5>
+
+            </div>
+        </div>
+        <div id="p3" class="card" style="width: 25%; margin-left: 1%;" onclick="hello3()">
+            <img src="./rentARoom.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h5><b>Rent A Room Management Service
+                    </b></h5>
+
+            </div>
+        </div>
+        <div id="part1" class="card" style="width: 25%; margin-left: 10%;  display: none;height: 400px;">
+            <img src="./alberto.png" alt="Avatar" style="width:100%; height: 300px;">
+            <div class="container">
+                <h5><b>TALHA JAMAL React Developer
+                    </b></h5>
+
+            </div>
+        </div>
+        <div id="part2" class="card" style="width: 25%; margin-left: 1%;  display: none; height: 400px;">
+            <img src="./fahad2.PNG" alt="Avatar" style="width:100%; height: 300px;">
+            <div class="container">
+                <h5><b>Fahad Qureshi BackEnd Expert
+                    </b></h5>
+
+            </div>
+        </div>
+        <div id="part3" class="card" style="width: 25%; margin-left: 1%; display: none;height: 400px;">
+            <img src="./adnan.PNG" alt="Avatar" style="width:100%;height: 300px;">
+            <div class="container">
+                <h5><b>ADNAN AHMED Design and UI Expert
+                    </b></h5>
+
+            </div>
+        </div>
+        <div id="p1detail" class="card" style="width: 60%; margin-left: 1%; display: none;">
+            <h1 style="margin-left: 40%;">
+                Project Features
+            </h1>
+            <hr>
+            <div class="container">
+                <h5><b>BOUTIQUE MANAGEMENT SYSTEM
+                    </b></h5>
+                    <h6>
+                        <li>REGISTER</li>
+                        <li>LOGIN</li>
+                        <li>LOOK FOR PRODUCTS SOLD</li>
+                        <li>LOOK FOR RECORDS</li>
+                        <li>CHECK FOR EMPLOYEE DATA</li>
+                        <li>CHECK FOR EMPLOYEE SALARIES</li>
+                        <li>CHECK FOR CUSTOMERS DATA</li>
+                        <li>CHECK FOR AVAIALABLE JOB POSITIONS IN THE SHOP</li>
+                    </h6>
+
+            </div>
+        </div>
+        <div id="p2detail" class="card" style="width: 60%; margin-left: 1%; display: none;">
+            <h1 style="margin-left: 40%;">
+                Project Features
+            </h1>
+            <hr>
+            <div class="container">
+                <h5><b>Carpool Management Service
+                    </b></h5>
+                <h6>
+                    <li>Give users the ability to find rideshare matches along their commuting routes in seconds.</li>
+                    <li>Enable different organizational departments or locations to form their own individually
+                        administered rideshare networks.</li>
+                    <li>Encourage higher levels of participation through rewards programs, mode-based challenges, and
+                        other gamification initiatives that get people excited about taking part.</li>
+                    <li>Help users make quick, efficient connections with other rideshare participants in their
+                        network(s), and plan their complete journeys with ease and simplicity.</li>
+                    <li> Track program progress, generate charts and maps, and draw on categorized data to generate key
+                        strategic insights that support long-term success.</li>
+                    <li>As mentioned, gamification is a highly effective and proven way to get people on board with your
+                        commuter programs. But what about all the data they generate? Team-based challenge programs and
+                        points-based rewards programs both require careful tracking. It’s a lot of work to do manually,
+                        but software-based solutions automate data collection and distribution, making managing
+                        gamification initiatives a turnkey proposition.</li>
+                </h6>
+
+            </div>
+        </div>
+        <div id="p3detail" class="card" style="width: 60%; margin-left: 1%; display: none;">
+            <h1 style="margin-left: 40%;">
+                Project Features
+            </h1>
+            <hr>
+            <div class="container">
+                <h5><b>Rent A Room Management Service
+                    </b></h5>
+
+                <h6>
+                    <li>One of the most important features of a property management system is rate plan management. In
+                        today’s market, your hotel’s rates are probably affected by a few different variables including
+                        distribution channel, season, day, etc. Therefore different rate plans are extremely necessary.
+                        A good property management system will allow you to create rate plans and derived rate plans and
+                        then easily assign them to reservations.</li>
+                    <li>Distribution is one of the major ways that small to medium-sized properties can compete with
+                        large hotel brands. Channel managers have become common and relatively cheap over the past few
+                        years. They’ve become essential to managing any type of property. When shopping around for a
+                        property management system, make sure that it connects to a powerful channel manager.</li>
+                    <li>Reporting is essential to any business and your property is no different. When choosing a
+                        property management system, there should be a robust reporting module built in. There are many
+                        different types of reports that a hotel should run every night. A few examples of reports that
+                        should be run every night include a room and tax report which shows all your room revenue
+                        associated for the day or a shift audit report which shows the transactions each cashier
+                        performed for the day.</li>
+                    <li>Help users make quick, efficient connections with other Rental Rooms participants in their
+                        network(s), and plan their complete Trip with ease and simplicity.</li>
+
+                </h6>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="gantt" style="display:none">
+        <div class="chart">
+            <img src="./Capture.PNG" alt="">
+
+
+
+        </div>
+
+    </div>
+
+
+    <button href="#" class="previous button button2" onclick="goback()"> Previous</button>
+
+    <button href="#" class="previous button button2" onclick="ShowPartner()" style="margin-top: 1%;">Show Group Partners</button>
+    <button href="#" class="previous button button2" onclick="ShowGanttChart()" style="margin-top: 1%;"> Show Gantt Chart</button>
+
+</body>
+
+</html>
